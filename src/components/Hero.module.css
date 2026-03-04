@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #a7d2fa, #de54da, #f3a3c0);
+    padding: 4rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    color: #f4d802;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    opacity: 0.5;
+    color: #6a4c93;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  animation: float 2s ease-in-out infinite;
+}
+
+.fan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(240, 12, 248);
+    text-align: center;
+    line-height: 3;
+    position: absolute;
+    top: 25%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/*floating emoji*/
+.emojiItem {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
