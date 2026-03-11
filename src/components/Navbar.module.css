@@ -23,6 +23,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .btn:hover {
     background: #e0e0e0;
     transform: translateY(-3px);
@@ -32,13 +33,27 @@
     background: #ff6b6b;
     color: white;
 }
+
+
+
+/* Logout button specific styles */
+.logoutBtn {
+    background: #f0f0f0;  /* Red color for logout */
+    color: #333;
+    margin-left: auto;     /* Pushes logout to the right on larger screens */
+}
+
+.logoutBtn:hover {
+    background: #e0e0e0;   /* Lighter red on hover */
+    transform: translateY(-3px);
+}
+
 .active:hover {
     background: #ff5252;
     transform: translateY(-3px);
 }
 
 /* Responsive styles */
-
 @media (max-width: 1024px) {
     .btn {
         padding: 8px 14px;
@@ -52,11 +67,18 @@
         align-items: center;
         gap: 10px;
     }
+    
     .btn {
         width: 80%;              /* make buttons larger on mobile */
         text-align: center;
         padding: 12px 0;
         font-size: 0.95rem;
+    }
+    
+    /* Reset margin-left for mobile */
+    .logoutBtn {
+        margin-left: 0;
+        width: 80%;
     }
 }
 
@@ -65,5 +87,9 @@
         width: 90%;
         font-size: 0.9rem;
         padding: 10px 0;
+    }
+    
+    .logoutBtn {
+        width: 90%;
     }
 }

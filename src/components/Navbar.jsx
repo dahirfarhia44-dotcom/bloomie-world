@@ -1,13 +1,21 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import styles from './Navbar.module.css'
 
 function Navbar() {
+    const navigate = useNavigate();
+    
     const navItems = [
-        { label: 'Home', emoji: '🏠', path: '/' },
+        { label: 'Home', emoji: '🏠', path: '/home' },
         { label: 'Learn', emoji: '📚', path: '/learn' },
         { label: 'Hygiene', emoji: '🧼', path: '/hygiene' },
         { label: 'Games', emoji: '🎮', path: '/games' },
     ];
+
+    const handleLogout = () => {
+        
+      //redirect to sign up page
+        navigate('/');
+    };
 
   return (
     <nav className={styles.nav}>
@@ -22,6 +30,14 @@ function Navbar() {
           {item.label} {item.emoji}
         </NavLink>
       ))}
+
+       {/* Logout Button */}
+            <button 
+                onClick={handleLogout}
+                className={`${styles.btn} ${styles.logoutBtn}`}
+            >
+                Logout 🚪
+            </button>
 
     </nav>
   );

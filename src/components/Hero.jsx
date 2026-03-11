@@ -13,13 +13,13 @@ function Hero() {
       <div className={styles.circle} style={{ width: '40px', height: '40px', top: '70%', left: '30%' }}><h1 className={styles.fan}>R</h1></div>
       <div className={styles.circle} style={{ width: '60px', height: '60px', top: '70%', left: '85%' }}><h1 className={styles.fan}>W</h1></div>
       
-      {/* Floating emojis */}
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '20%', left: '8%', fontSize: '2rem' }}>🌟</div>
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '40%', left: '80%', fontSize: '2.5rem' }}>🦄</div>
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '80%', left: '45%', fontSize: '1.8rem' }}>🍩</div>
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '15%', left: '40%', fontSize: '2rem' }}>🎨</div>
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '60%', left: '20%', fontSize: '2rem' }}>🍭</div>
-      <div className={styles.emojiItem} style={{ position: 'absolute', top: '10%', left: '90%', fontSize: '2rem' }}>🚀</div>
+      {/* Floating emojis with random movement */}
+      <div className={`${styles.emojiItem} ${styles.randomMove1}`} style={{top:'20%', left:'40%'}}>🌟</div>
+      <div className={`${styles.emojiItem} ${styles.randomMove2}`} style={{top:'70%', left:'70%'}}>🦄</div>
+      <div className={`${styles.emojiItem} ${styles.randomMove3}`} style={{top:'80%', left:'45%'}}>🍩</div>
+      <div className={`${styles.emojiItem} ${styles.randomMove4}`} style={{top:'05%', left:'4%'}}>🎨</div>
+      <div className={`${styles.emojiItem} ${styles.randomMove5}`} style={{top:'60%', left:'20%'}}>🍭</div>
+      <div className={`${styles.emojiItem} ${styles.randomMove6}`} style={{top:'10%', left:'90%'}}>🚀</div>
     </div>
   )
 }
