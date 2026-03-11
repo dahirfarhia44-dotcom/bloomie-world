@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import styles from './SignUp.module.css'
+
+
 
 function SignUp() {
 const navigate = useNavigate();
@@ -36,7 +39,7 @@ navigate('/home');
 };
 
   return (
-    <div>
+    <div className={styles.auth}>
         <h2>Student Sign Up</h2>
 
         <form onSubmit={handleSubmit}>
