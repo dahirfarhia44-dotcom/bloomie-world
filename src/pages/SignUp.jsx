@@ -27,20 +27,35 @@ e.preventDefault();
 
 const level = getLevel(Number(student.grade));
 
+
 const newStudent = {
 ...student,
-level: level
+level: level,
+id: Date.now(),
+progress: {
+    learning: 0,
+    hygiene: 0,
+    games: 0}
 };
+
+//get existing students from localStorage
+const existing = JSON.parse(localStorage.getItem('students')) || [];
+
+//add new student to existing students
+const updatedStudents = [...existing, newStudent];
+
+//save updated students to localStorage
+localStorage.setItem('students', JSON.stringify(updatedStudents));
 
 console.log('Student registered:', newStudent);
 
-navigate('/home');
+navigate('/login');
 
 };
 
   return (
     <div className={styles.auth}>
-        <h2>Student Sign Up</h2>
+        <h2>Sign Up</h2>
 
         <form onSubmit={handleSubmit}>
             <input 
@@ -84,6 +99,16 @@ navigate('/home');
             </select>
             <button type='submit'>Sign Up</button>
 
+
+            <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
+                Already have an account? {' '}
+                <span
+                    onClick={() => navigate('/login')}
+                    style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}
+                >
+                    Log In!
+                </span> 
+            </p>
         </form>
     </div>
   )

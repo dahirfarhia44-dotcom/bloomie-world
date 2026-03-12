@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overall Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode */
+.dark {
+  background: #0d0f14;
+  color: #e8eaf0;
+}
+
+.dark .sidebar {
+  background: #151820;
+  border-right: 2px solid #7c6af7;
+}
+
+.dark .logo {
+  border-bottom: 1px solid #272c3d;
+  color: #a78bfa;
+}
+
+.dark .sidebar button {
+  color: #6b7280;
+}
+
+.dark .sidebar button:hover {
+  background: #1c2030;
+  color: #e8eaf0;
+}
+
+.dark .mainContent {
+  background: #0d0f14;
+}
+
+.dark .mainContent h1 {
+  color: #e8eaf0;
+}
+
+.dark .mainContent p {
+  color: #6b7280;
+}
+
+/*  Light Mode */
+.light {
+  background: #f4f6fb;
+  color: #1a1a2e;
+}
+
+.light .sidebar {
+  background: #ffffff;
+  border-right: 2px solid #7c6af7;
+}
+
+.light .logo {
+  border-bottom: 1px solid #e0e0e0;
+  color: #7c6af7;
+}
+
+.light .sidebar button {
+  color: #6b7280;
+}
+
+.light .sidebar button:hover {
+  background: #f0eeff;
+  color: #7c6af7;
+}
+
+.light .mainContent {
+  background: #f4f6fb;
+}
+
+.light .mainContent h1 {
+  color: #1a1a2e;
+}
+
+.light .mainContent p {
+  color: #6b7280;
+}
+
+/*  Sidebar */
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 16px;
+  gap: 8px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  transition: background 0.3s ease;
+}
+
+/*  Logo  */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 24px;
+  margin-bottom: 12px;
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  transition: border-color 0.3s ease;
+}
+
+/* Sidebar Buttons */
+.sidebar button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+/* Logout at bottom */
+.sidebar button:last-child {
+  margin-top: auto;
+  color: #f87171 !important;
+}
+
+.sidebar button:last-child:hover {
+  background: rgba(248, 113, 113, 0.1) !important;
+}
+
+/*  Main Content  */
+.mainContent {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.mainContent h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.mainContent p {
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+/* Responsive */
+/* Responsive */
+@media (max-width: 768px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 16px;
+    position: static;
+    gap: 6px;
+    border-right: none !important;
+    border-bottom: 2px solid #7c6af7 !important;
+  }
+
+  .logo {
+    width: 100%;
+    padding-bottom: 12px;
+    margin-bottom: 6px;
+  }
+
+  .sidebar button {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  .sidebar button:last-child {
+    margin-top: 0;
+  }
+
+  .mainContent {
+    padding: 20px 16px;
+  }
+
+  .mainContent h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .sidebar {
+    border-right: none !important;
+    border-bottom: 2px solid #7c6af7 !important;
+  }
+
+  .sidebar button {
+    font-size: 0.78rem;
+    padding: 6px 8px;
+  }
+
+  .mainContent {
+    padding: 16px 12px;
+  }
+
+  .mainContent h1 {
+    font-size: 1.2rem;
+  }
+}

@@ -2,7 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Splashscreen from "./pages/Splashscreen";
-import SignUp from "./pages/SignUp";  
+import AdminLogin from "./pages/AdminLogin";
+import AdminDashboard from "./pages/AdminDashboard";
+import SignUp from "./pages/SignUp"; 
+import Login from "./pages/Login";  
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
@@ -19,7 +22,10 @@ function App() {
    <Route path="/" element={<Splashscreen />} />
     
     {/* Main app content after sign up */}
+    <Route path="/admin/login" element={<AdminLogin />} /> 
+    <Route path="/admin/dashboard" element={<AdminDashboard />} />
     <Route path="/signup" element={<SignUp />} />
+    <Route path="/login" element={<Login />} />
     <Route
     path="/home"
     element={

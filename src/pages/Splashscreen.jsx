@@ -8,7 +8,7 @@ function Splashscreen() {
   return (
     <div className={styles.container}>
         <div className={styles.content}>
-            <h1 className={styles.title}>Welcome to MyApp</h1>
+            <h1 className={styles.title}>Welcome to Bloomie</h1>
             <p className={styles.subtitle}>Your gateway to amazing experiences</p>
             <div className={styles.buttonContainer}>
                 
