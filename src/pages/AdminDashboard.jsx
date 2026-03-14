@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import styles from './AdminDashboard.module.css';
 
@@ -7,6 +7,18 @@ function AdminDashboard() {
 const [darkMode, setDarkMode] = useState(true);
 const navigate = useNavigate();
 const [tab, setTab] = useState('overview');
+
+
+useEffect(() => {
+  window.history.pushState(null, '', window.location.href);
+  window.onpopstate = () => {
+    window.history.pushState(null, '', window.location.href);
+  };
+  return () => {
+    window.onpopstate = null;
+  };
+}, []);
+
 
   return (
     <div className={`${styles.dashboard} ${darkMode ? styles.dark : styles.light}`}>
@@ -30,7 +42,10 @@ const [tab, setTab] = useState('overview');
         </button>
 
         {/* Logout button */}
-        <button onClick={() => navigate('/admin/login')}>🚪 Logout</button>
+        <button onClick={() => {
+  localStorage.removeItem('isAdmin');
+  window.location.replace('/admin/login');  
+}}>🚪 Logout</button>
 
       </div>
         <div className={styles.mainContent}>

@@ -13,7 +13,7 @@ function Login() {
     const found = students.find(s => s.email === credentials.email && s.password === credentials.password);
     if (found) {
       localStorage.setItem('currentStudent', JSON.stringify(found));
-      navigate('/home');
+      window.location.replace('/home');
     } else {
       setError('Invalid email or password. Please sign up first!');
     }
@@ -29,10 +29,14 @@ function Login() {
         <button type='submit'>Log In</button>
         <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
           Don't have an account?{' '}
-          <span onClick={() => navigate('/signup')} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>Sign Up</span>
+          <span onClick={() => navigate('/signup', { replace: true })} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>Sign Up</span>
         </p>
         <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
-          <span onClick={() => navigate('/')} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
+          <span onClick={() => {
+            localStorage.removeItem('currentStudent');
+            localStorage.removeItem('isAdmin');
+            window.location.replace('/');
+          }} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
         </p>
       </form>
     </div>

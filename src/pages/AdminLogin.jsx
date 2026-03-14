@@ -16,7 +16,7 @@ function AdminLogin() {
     e.preventDefault();
     if (credentials.email === ADMIN.email && credentials.password === ADMIN.password) {
       localStorage.setItem('isAdmin', 'true');
-      navigate('/admin/dashboard');
+      navigate('/admin/dashboard', { replace: true });
     } else {
       setError('Invalid admin credentials!');
     }
@@ -31,7 +31,10 @@ function AdminLogin() {
         {error && <p style={{ color: 'red', fontSize: '0.9rem', textAlign: 'center' }}>{error}</p>}
         <button type='submit'>Enter 👑</button>
         <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
-          <span onClick={() => navigate('/')} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
+          <span onClick={() => { 
+            localStorage.removeItem('currentStudent');
+            localStorage.removeItem('isAdmin');
+            navigate('/', { replace: true })}} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
         </p>
       </form>
     </div>

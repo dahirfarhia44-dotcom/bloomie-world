@@ -12,9 +12,8 @@ function Navbar() {
     ];
 
     const handleLogout = () => {
-        
-      //redirect to sign up page
-        navigate('/');
+      localStorage.removeItem('currentStudent');
+      window.location.replace('/');
     };
 
   return (

@@ -31,7 +31,7 @@ const handleSubmit = (e) => {
     const existing = JSON.parse(localStorage.getItem('students')) || [];
     const updatedStudents = [...existing, newStudent];
     localStorage.setItem('students', JSON.stringify(updatedStudents));
-    navigate('/login');
+    window.location.replace('/login');
 };
 
 return (
@@ -55,10 +55,14 @@ return (
             <button type='submit'>Sign Up</button>
             <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
                 Already have an account?{' '}
-                <span onClick={() => navigate('/login')} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>Log In</span>
+                <span onClick={() => navigate('/login', { replace: true })} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>Log In</span>
             </p>
             <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#666' }}>
-                <span onClick={() => navigate('/')} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
+                <span onClick={() => {
+                    localStorage.removeItem('currentStudent');
+                    localStorage.removeItem('isAdmin');
+                    window.location.replace('/');
+                }} style={{ color: '#66a6ff', cursor: 'pointer', fontWeight: 'bold' }}>← Back to Home</span>
             </p>
         </form>
     </div>

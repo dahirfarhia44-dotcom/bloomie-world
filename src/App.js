@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Splashscreen from "./pages/Splashscreen";
 import AdminLogin from "./pages/AdminLogin";
@@ -14,60 +14,58 @@ import Learn from "./pages/Learn";
 import Hygiene from "./pages/Hygiene";
 import Games from "./pages/Games";
 
+function ProtectedRoute({ children }) {
+  const student = localStorage.getItem('currentStudent');
+  if (!student) {
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+}
+
+function AdminRoute({ children }) {
+  const isAdmin = localStorage.getItem('isAdmin');
+  if (!isAdmin) {
+    return <Navigate to="/admin/login" replace />;
+  }
+  return children;
+}
+
 function App() {
   return (
-
    <Routes>
-    {/*1st page to appear*/}
-   <Route path="/" element={<Splashscreen />} />
-    
-    {/* Main app content after sign up */}
-    <Route path="/admin/login" element={<AdminLogin />} /> 
-    <Route path="/admin/dashboard" element={<AdminDashboard />} />
+    <Route path="/" element={<Splashscreen />} />
     <Route path="/signup" element={<SignUp />} />
     <Route path="/login" element={<Login />} />
-    <Route
-    path="/home"
-    element={
-      <>
-      <Hero />
-      <Navbar />
-      <Home />
-      </>
-    }
-    />
-      <Route
-    path="/learn"
-    element={
-      <>
-      <Hero />
-      <Navbar />
-      <Learn />
-      </>
-    }
-    />
+    <Route path="/admin/login" element={<AdminLogin />} />
 
-    <Route
-    path="/hygiene"
-    element={
-      <>
-      <Hero />
-      <Navbar />
-      <Hygiene />
-      </>
-    }
-    />
+    {/* Protected admin route */}
+    <Route path="/admin/dashboard" element={
+      <AdminRoute>
+        <AdminDashboard />
+      </AdminRoute>
+    } />
 
-    <Route
-    path="/games"
-    element={
-      <>
-      <Hero />
-      <Navbar />
-      <Games />
-      </>
-    }
-    />
+    {/* Protected student routes */}
+    <Route path="/home" element={
+      <ProtectedRoute>
+        <Hero /><Navbar /><Home />
+      </ProtectedRoute>
+    } />
+    <Route path="/learn" element={
+      <ProtectedRoute>
+        <Hero /><Navbar /><Learn />
+      </ProtectedRoute>
+    } />
+    <Route path="/hygiene" element={
+      <ProtectedRoute>
+        <Hero /><Navbar /><Hygiene />
+      </ProtectedRoute>
+    } />
+    <Route path="/games" element={
+      <ProtectedRoute>
+        <Hero /><Navbar /><Games />
+      </ProtectedRoute>
+    } />
    </Routes>
   );
 }
