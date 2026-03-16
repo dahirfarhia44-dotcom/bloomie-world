@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+
+.home {
+  min-height: 100vh;
+  padding: 30px 20px;
+  font-family: 'Nunito', sans-serif;
+  background: #f7f8fc;
+}
+
+/* ── Shared ── */
+.welcome {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+
+.quickLinks {
+  margin-top: 30px;
+}
+
+.quickLinks h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 24px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.card span {
+  font-size: 2.2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ── BASIC ── */
+.basicHome {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #fff9c4, #ffe0f0);
+  border-radius: 30px;
+  padding: 36px;
+  box-shadow: 0 8px 32px rgba(255,105,180,0.15);
+}
+
+.basicHome .welcome { color: #e91e8c; }
+.basicHome .subtitle { color: #e91e8c; }
+
+.progressContainer {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.progressContainer h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e91e8c;
+  margin-bottom: 12px;
+}
+
+.stars p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.basicHome .card {
+  background: white;
+  color: #e91e8c;
+  border: 2px solid #ffb3d9;
+}
+
+/* ── INTERMEDIATE ── */
+.intermediateHome {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  border-radius: 30px;
+  padding: 36px;
+  box-shadow: 0 8px 32px rgba(0,188,212,0.15);
+}
+
+.intermediateHome .welcome { color: #00838f; }
+.intermediateHome .subtitle { color: #00838f; }
+
+.progressSection {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.progressSection h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #00838f;
+  margin-bottom: 16px;
+}
+
+.progressItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.progressItem span:first-child {
+  min-width: 100px;
+  font-weight: 600;
+  color: #444;
+}
+
+.bar {
+  flex: 1;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.intermediateHome .card {
+  background: white;
+  color: #00838f;
+  border: 2px solid #b2ebf2;
+}
+
+/* ── ADVANCED ── */
+.advancedHome {
+  max-width: 700px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  border-radius: 30px;
+  padding: 36px;
+  box-shadow: 0 8px 32px rgba(124,106,247,0.3);
+}
+
+.advancedHome .welcome { color: #a78bfa; }
+.advancedHome .subtitle { color: #6b7280; }
+.advancedHome .quickLinks h2 { color: #e8eaf0; }
+
+.advancedHome .progressSection {
+  background: #0d0f14;
+}
+
+.advancedHome .progressSection h2 { color: #a78bfa; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.statBox {
+  background: #1c2030;
+  border-radius: 14px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #272c3d;
+}
+
+.statNum {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #a78bfa;
+  margin-bottom: 4px;
+}
+
+.statBox p:last-child {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.advancedHome .card {
+  background: #1c2030;
+  color: #a78bfa;
+  border: 1px solid #272c3d;
+}
+
+.dashboardWrapper {
+  position: relative;
+  padding: 40px 0;
+  margin-bottom: 10px;
+}
+
+.statsCard {
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .basicHome,
+  .intermediateHome,
+  .advancedHome {
+    padding: 24px 16px;
+  }
+
+  .welcome { font-size: 1.8rem; }
+  .cards { gap: 10px; }
+  .card { min-width: 100px; padding: 16px 12px; }
+  .statsGrid { grid-template-columns: repeat(2, 1fr); }
+}

@@ -1,0 +1,159 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+/* Mascot */
+.mascot {
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid;
+  padding: 10px;
+  flex-shrink: 0;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.accessory {
+  font-size: 1.1rem;
+  animation: spin 6s linear infinite;
+}
+
+.faceRing {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.eyes {
+  display: flex;
+  gap: 10px;
+}
+
+.eye {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  animation: blink 4s ease-in-out infinite;
+}
+
+.cheeks {
+  display: flex;
+  gap: 14px;
+  margin-top: -4px;
+}
+
+.cheek {
+  width: 12px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+}
+
+.mouth {
+  width: 16px;
+  height: 8px;
+  border-bottom: 3px solid;
+  border-radius: 0 0 50% 50%;
+  margin-top: 2px;
+}
+
+.bodyEmoji {
+  font-size: 1.4rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.badge {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+/* Speech Bubble */
+.bubble {
+  position: relative;
+  background: white;
+  border: 2px solid;
+  border-radius: 16px;
+  padding: 14px 18px;
+  flex: 1;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.bubbleTail {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid;
+}
+
+.message {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Animations */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes blink {
+  0%, 90%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .wrapper { flex-direction: column; align-items: flex-start; }
+  .bubbleTail { display: none; }
+  .faceRing { width: 50px; height: 50px; }
+}
