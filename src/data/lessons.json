@@ -1,0 +1,228 @@
+{
+  "basic": {
+    "Math": [
+  {
+    "id": 1,
+    "title": "Counting Numbers 1-10",
+    "content": "Numbers help us count things around us! Let's count from 1 to 10. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. You can count your fingers, toys, or anything you see!",
+    "quiz": [
+      {
+        "question": "What number comes after 5?",
+        "options": ["4", "6", "7", "8"],
+        "answer": "6"
+      },
+      {
+        "question": "How many fingers do you have on one hand?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Adding Small Numbers",
+    "content": "Adding means putting numbers together! If you have 2 apples and someone gives you 1 more apple, you now have 3 apples. 2 + 1 = 3. Let's practice adding!",
+    "quiz": [
+      {
+        "question": "What is 1 + 2?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+      },
+      {
+        "question": "What is 3 + 3?",
+        "options": ["5", "6", "7", "8"],
+        "answer": "6"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Shapes Around Us",
+    "content": "Shapes are everywhere! A ball is a circle. A book is a rectangle. A sandwich cut in half is a triangle. Can you find shapes around your house?",
+    "quiz": [
+      {
+        "question": "What shape is a ball?",
+        "options": ["Square", "Triangle", "Circle", "Rectangle"],
+        "answer": "Circle"
+      },
+      {
+        "question": "How many sides does a triangle have?",
+        "options": ["2", "3", "4", "5"],
+        "answer": "3"
+      }
+    ]
+  }
+],
+    "English": [
+  {
+    "id": 1,
+    "title": "The Alphabet",
+    "content": "The English alphabet has 26 letters. It starts with A and ends with Z. Letters help us read and write words.",
+    "quiz": [
+      {
+        "question": "Which letter comes after A?",
+        "options": ["B", "C", "D", "Z"],
+        "answer": "B"
+      },
+      {
+        "question": "Which letter comes before C?",
+        "options": ["A", "B", "D", "E"],
+        "answer": "B"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Vowels",
+    "content": "Vowels are special letters in English. The vowels are A, E, I, O, and U. They help us make many words.",
+    "quiz": [
+      {
+        "question": "Which of these is a vowel?",
+        "options": ["B", "E", "T", "L"],
+        "answer": "E"
+      },
+      {
+        "question": "How many vowels are there?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Simple Words",
+    "content": "Words are made from letters. For example: cat, dog, sun, and hat. Reading small words helps us learn to read bigger ones.",
+    "quiz": [
+      {
+        "question": "Which of these is a word?",
+        "options": ["cat", "123", "@@", "###"],
+        "answer": "cat"
+      },
+      {
+        "question": "What letter starts the word 'dog'?",
+        "options": ["D", "O", "G", "C"],
+        "answer": "D"
+      }
+    ]
+  }
+],
+    "Science": [
+  {
+    "id": 1,
+    "title": "Living and Non-Living Things",
+    "content": "Living things grow, breathe, and need food and water. Animals and plants are living things. Rocks and chairs are non-living things.",
+    "quiz": [
+      {
+        "question": "Which of these is a living thing?",
+        "options": ["Rock", "Tree", "Chair", "Table"],
+        "answer": "Tree"
+      },
+      {
+        "question": "Living things need what to grow?",
+        "options": ["Food", "Plastic", "Metal", "Sand"],
+        "answer": "Food"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Parts of the Body",
+    "content": "Our body has many parts. We see with our eyes, hear with our ears, and walk with our legs.",
+    "quiz": [
+      {
+        "question": "Which body part helps you see?",
+        "options": ["Eyes", "Ears", "Legs", "Hands"],
+        "answer": "Eyes"
+      },
+      {
+        "question": "Which body part helps you hear?",
+        "options": ["Nose", "Eyes", "Ears", "Feet"],
+        "answer": "Ears"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Day and Night",
+    "content": "During the day the sun shines and gives us light. At night the moon and stars appear in the sky.",
+    "quiz": [
+      {
+        "question": "What shines during the day?",
+        "options": ["Moon", "Sun", "Stars", "Clouds"],
+        "answer": "Sun"
+      },
+      {
+        "question": "What appears at night?",
+        "options": ["Sun", "Moon", "Cars", "Trees"],
+        "answer": "Moon"
+      }
+    ]
+  }
+],
+    "LifeSkills": [
+  {
+    "id": 1,
+    "title": "Washing Hands",
+    "content": "Washing hands keeps us clean and healthy. We use soap and water to remove germs.",
+    "quiz": [
+      {
+        "question": "What do we use to wash our hands?",
+        "options": ["Soap", "Dust", "Paper", "Sand"],
+        "answer": "Soap"
+      },
+      {
+        "question": "Why do we wash our hands?",
+        "options": ["To get dirty", "To remove germs", "To play", "To sleep"],
+        "answer": "To remove germs"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Brushing Teeth",
+    "content": "We brush our teeth every morning and night to keep them clean and strong.",
+    "quiz": [
+      {
+        "question": "What do we use to brush our teeth?",
+        "options": ["Toothbrush", "Spoon", "Fork", "Pen"],
+        "answer": "Toothbrush"
+      },
+      {
+        "question": "When should we brush our teeth?",
+        "options": ["Morning and night", "Only at night", "Only morning", "Never"],
+        "answer": "Morning and night"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Being Kind",
+    "content": "Being kind means helping others, sharing, and using polite words like please and thank you.",
+    "quiz": [
+      {
+        "question": "Which word is polite?",
+        "options": ["Please", "No", "Stop", "Go"],
+        "answer": "Please"
+      },
+      {
+        "question": "Being kind means?",
+        "options": ["Helping others", "Fighting", "Shouting", "Breaking things"],
+        "answer": "Helping others"
+      }
+    ]
+  }
+]
+  },
+  "intermediate": {
+    "Math": [],
+    "English": [],
+    "Science": [],
+    "LifeSkills": []
+  },
+  "advanced": {
+    "Math": [],
+    "English": [],
+    "Science": [],
+    "LifeSkills": []
+  }
+}
