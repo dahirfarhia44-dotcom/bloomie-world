@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+
+.gamesPage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── Level themes ── */
+.basicGames {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #fff9c4, #ffe0f0);
+  color: #e91e8c;
+}
+
+.intermediateGames {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  color: #00838f;
+}
+
+.advancedGames {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #a78bfa;
+}
+
+/* ── Header ── */
+.pageTitle {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+/* ── Progress box ── */
+.progressBox {
+  margin-bottom: 28px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.basicGames .progressFill {
+  background: linear-gradient(90deg, #f48fb1, #e91e8c);
+}
+
+.intermediateGames .progressFill {
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+}
+
+.advancedGames .progressFill {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.progressPercent {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* ── Games grid ── */
+.gamesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+/* ── Game card ── */
+.gameCard {
+  padding: 24px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.gameCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.basicGames .gameCard {
+  background: white;
+  border: 2px solid #ffb3d9;
+  color: #e91e8c;
+}
+
+.intermediateGames .gameCard {
+  background: white;
+  border: 2px solid #b2ebf2;
+  color: #00838f;
+}
+
+.advancedGames .gameCard {
+  background: #1c2030;
+  border: 1px solid #272c3d;
+  color: #a78bfa;
+}
+
+.basicGames .gameDone {
+  background: #fce4ec;
+  border-color: #e91e8c;
+}
+
+.intermediateGames .gameDone {
+  background: #e0f7fa;
+  border-color: #00bcd4;
+}
+
+.advancedGames .gameDone {
+  background: #2e1f5e;
+  border-color: #7c3aed;
+}
+
+.gameIcon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.gameLabel {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.gameDesc {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.doneTag {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ── Active game area ── */
+.activeGame {
+  width: 100%;
+}
+
+.backBtn {
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.basicGames .backBtn {
+  background: white;
+  color: #e91e8c;
+  border: 2px solid #ffb3d9;
+}
+
+.intermediateGames .backBtn {
+  background: white;
+  color: #00838f;
+  border: 2px solid #b2ebf2;
+}
+
+.advancedGames .backBtn {
+  background: #1c2030;
+  color: #a78bfa;
+  border: 1px solid #272c3d;
+}
+
+.gameTitle {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+/* ── Memory game ── */
+.memoryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 500px;
+}
+
+.memoryCard {
+  height: 80px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.basicGames .memoryCard { background: white; border-color: #ffb3d9; color: #e91e8c; }
+.intermediateGames .memoryCard { background: white; border-color: #b2ebf2; color: #00838f; }
+.advancedGames .memoryCard { background: #1c2030; border-color: #272c3d; color: #a78bfa; }
+
+.flipped { transform: scale(1.05); }
+.matched { opacity: 0.5; cursor: default; }
+.movesLabel { grid-column: 1 / -1; font-weight: 700; margin-top: 8px; }
+
+/* ── Word scramble ── */
+.scrambleContainer { max-width: 480px; }
+.scrambleHint { font-size: 1rem; margin-bottom: 8px; opacity: 0.8; }
+.scrambleWord {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+
+.scrambleInput {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 12px;
+  outline: none;
+}
+
+.basicGames .scrambleInput { border: 2px solid #ffb3d9; color: #e91e8c; }
+.intermediateGames .scrambleInput { border: 2px solid #b2ebf2; color: #00838f; }
+.advancedGames .scrambleInput { background: #1c2030; border: 1px solid #272c3d; color: #a78bfa; }
+
+.scrambleBtn {
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.basicGames .scrambleBtn { background: white; color: #e91e8c; border: 2px solid #ffb3d9; }
+.intermediateGames .scrambleBtn { background: white; color: #00838f; border: 2px solid #b2ebf2; }
+.advancedGames .scrambleBtn { background: #1c2030; color: #a78bfa; border: 1px solid #272c3d; }
+
+/* ── Drag drop ── */
+.dragContainer { max-width: 480px; }
+.dragLabel { font-size: 1rem; margin-bottom: 16px; font-weight: 600; }
+.dragItem {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.basicGames .dragItem { background: white; border: 2px solid #ffb3d9; color: #e91e8c; }
+.intermediateGames .dragItem { background: white; border: 2px solid #b2ebf2; color: #00838f; }
+.advancedGames .dragItem { background: #1c2030; border: 1px solid #272c3d; color: #a78bfa; }
+
+.dragOptions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.dragOption {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.basicGames .dragOption { background: white; color: #e91e8c; border: 2px solid #ffb3d9; }
+.intermediateGames .dragOption { background: white; color: #00838f; border: 2px solid #b2ebf2; }
+.advancedGames .dragOption { background: #1c2030; color: #a78bfa; border: 1px solid #272c3d; }
+
+.dragOption:hover { transform: translateY(-2px); }
+
+/* ── Trivia ── */
+.triviaContainer { max-width: 480px; }
+.triviaQuestion {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.triviaOptions { display: flex; flex-direction: column; gap: 10px; }
+
+.triviaOption {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.15s ease;
+}
+
+.triviaOption:hover { transform: translateX(4px); }
+
+.basicGames .triviaOption { background: white; color: #e91e8c; border: 2px solid #ffb3d9; }
+.intermediateGames .triviaOption { background: white; color: #00838f; border: 2px solid #b2ebf2; }
+.advancedGames .triviaOption { background: #1c2030; color: #a78bfa; border: 1px solid #272c3d; }
+
+/* ── Shared feedback ── */
+.correct { color: green; font-weight: 700; margin-top: 10px; }
+.incorrect { color: red; font-weight: 700; margin-top: 10px; }
+.scoreLabel { font-weight: 600; margin-top: 12px; opacity: 0.8; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .basicGames,
+  .intermediateGames,
+  .advancedGames { padding: 24px 16px; }
+
+  .gamesGrid { grid-template-columns: repeat(2, 1fr); }
+  .memoryGrid { grid-template-columns: repeat(3, 1fr); }
+  .dragOptions { flex-direction: column; }
+}

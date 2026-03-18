@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import styles from './Home.module.css';
 import Bloomie from '../components/Bloomie';
+import lessons from '../data/lessons.json';
 
 function Home() {
   const navigate = useNavigate();
@@ -10,6 +11,23 @@ function Home() {
   const level = student?.level;
   const name = student?.name;
   const progress = student?.progress;
+
+  // ── Fix: recalculate learning % live from completedLessons ──────
+  const calcLearningProgress = () => {
+    if (!lessons[level]) return 0;
+    const totalLessons = Object.values(lessons[level]).reduce(
+      (total, subjectLessons) => total + subjectLessons.length, 0
+    );
+    if (totalLessons === 0) return 0;
+    const completedLessons = progress?.completedLessons || {};
+    const totalCompleted = Object.values(completedLessons).reduce(
+      (total, arr) => total + arr.length, 0
+    );
+    return Math.round((totalCompleted / totalLessons) * 100);
+  };
+
+  const learningProgress = calcLearningProgress();
+  // ────────────────────────────────────────────────────────────────
 
   return (
     <div className={styles.home}>
@@ -24,7 +42,8 @@ function Home() {
             <div className={styles.progressContainer}>
               <h2>⭐ Your Stars</h2>
               <div className={styles.stars}>
-                <p>📚 Learning: {'⭐'.repeat(Math.ceil(progress.learning / 20))}</p>
+                {/* ✅ uses live-calculated learningProgress */}
+                <p>📚 Learning: {'⭐'.repeat(Math.ceil(learningProgress / 20))}</p>
                 <p>🧼 Hygiene: {'⭐'.repeat(Math.ceil(progress.hygiene / 20))}</p>
                 <p>🎮 Games: {'⭐'.repeat(Math.ceil(progress.games / 20))}</p>
               </div>
@@ -58,8 +77,9 @@ function Home() {
               <h2>📊 Your Progress</h2>
               <div className={styles.progressItem}>
                 <span>📚 Learning</span>
-                <div className={styles.bar}><div className={styles.fill} style={{ width: `${progress.learning}%` }} /></div>
-                <span>{progress.learning}%</span>
+                {/* ✅ uses live-calculated learningProgress */}
+                <div className={styles.bar}><div className={styles.fill} style={{ width: `${learningProgress}%` }} /></div>
+                <span>{learningProgress}%</span>
               </div>
               <div className={styles.progressItem}>
                 <span>🧼 Hygiene</span>
@@ -82,7 +102,7 @@ function Home() {
                   <span>🧼</span><p>Hygiene Lessons</p>
                 </div>
                 <div className={styles.card} onClick={() => navigate('/games')}>
-                  <span>🎮</span><p>Challenge Games</p> 
+                  <span>🎮</span><p>Challenge Games</p>
                 </div>
               </div>
             </div>
@@ -101,7 +121,8 @@ function Home() {
               <h2>📈 Performance Stats</h2>
               <div className={styles.statsGrid}>
                 <div className={styles.statBox}>
-                  <p className={styles.statNum}>{progress.learning}%</p>
+                  {/* ✅ uses live-calculated learningProgress */}
+                  <p className={styles.statNum}>{learningProgress}%</p>
                   <p>Learning</p>
                 </div>
                 <div className={styles.statBox}>
@@ -114,7 +135,7 @@ function Home() {
                 </div>
                 <div className={styles.statBox}>
                   <p className={styles.statNum}>
-                    {Math.round((progress.learning + progress.hygiene + progress.games) / 3)}%
+                    {Math.round((learningProgress + progress.hygiene + progress.games) / 3)}%
                   </p>
                   <p>Overall</p>
                 </div>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap');
+
+.hygienePage {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* ── Level themes ── */
+.basicHygiene {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #fff9c4, #ffe0f0);
+  color: #e91e8c;
+}
+
+.intermediateHygiene {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+  color: #00838f;
+}
+
+.advancedHygiene {
+  width: 100%;
+  padding: 36px;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #a78bfa;
+}
+
+/* ── Header ── */
+.pageTitle {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  opacity: 0.85;
+}
+
+/* ── Progress box ── */
+.progressBox {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 28px;
+}
+
+.advancedHygiene .progressBox {
+  background: #1c2030;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.advancedHygiene .progressHeader {
+  color: #a78bfa;
+}
+
+.progressBar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 50px;
+  transition: width 0.4s ease;
+}
+
+.basicHygiene .progressFill {
+  background: linear-gradient(90deg, #f48fb1, #e91e8c);
+}
+
+.intermediateHygiene .progressFill {
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+}
+
+.advancedHygiene .progressFill {
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+
+.progressPercent {
+  text-align: right;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ── Habits grid ── */
+.habitsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* ── Habit card ── */
+.habitCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.habitCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Card colors per level */
+.basicHygiene .habitCard {
+  background: white;
+  border: 2px solid #ffb3d9;
+  color: #e91e8c;
+}
+
+.intermediateHygiene .habitCard {
+  background: white;
+  border: 2px solid #b2ebf2;
+  color: #00838f;
+}
+
+.advancedHygiene .habitCard {
+  background: #1c2030;
+  border: 1px solid #272c3d;
+  color: #a78bfa;
+}
+
+/* Done state */
+.basicHygiene .habitDone {
+  background: #fce4ec;
+  border-color: #e91e8c;
+}
+
+.intermediateHygiene .habitDone {
+  background: #e0f7fa;
+  border-color: #00bcd4;
+}
+
+.advancedHygiene .habitDone {
+  background: #2e1f5e;
+  border-color: #7c3aed;
+}
+
+.habitIcon {
+  font-size: 2rem;
+}
+
+.habitText {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.habitCheck {
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .basicHygiene,
+  .intermediateHygiene,
+  .advancedHygiene {
+    padding: 24px 16px;
+  }
+
+  .habitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

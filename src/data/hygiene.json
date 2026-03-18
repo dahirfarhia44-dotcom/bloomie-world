@@ -1,0 +1,32 @@
+{
+  "basic": [
+    { "id": 1, "habit": "Wash hands before eating 🧼", "icon": "🧼" },
+    { "id": 2, "habit": "Brush teeth in the morning 🪥", "icon": "🪥" },
+    { "id": 3, "habit": "Brush teeth at night 🌙", "icon": "🌙" },
+    { "id": 4, "habit": "Take a bath today 🛁", "icon": "🛁" },
+    { "id": 5, "habit": "Wear clean clothes 👕", "icon": "👕" },
+    { "id": 6, "habit": "Wash hands after toilet 🚽", "icon": "🚽" }
+  ],
+  "intermediate": [
+    { "id": 1, "habit": "Brush teeth twice today 🪥", "icon": "🪥" },
+    { "id": 2, "habit": "Wash hands before and after meals 🧼", "icon": "🧼" },
+    { "id": 3, "habit": "Shower and use soap 🚿", "icon": "🚿" },
+    { "id": 4, "habit": "Clip fingernails if needed ✂️", "icon": "✂️" },
+    { "id": 5, "habit": "Wear clean and ironed clothes 👔", "icon": "👔" },
+    { "id": 6, "habit": "Comb or brush your hair 💇", "icon": "💇" },
+    { "id": 7, "habit": "Drink at least 6 glasses of water 💧", "icon": "💧" },
+    { "id": 8, "habit": "Clean your room or desk 🧹", "icon": "🧹" }
+  ],
+  "advanced": [
+    { "id": 1, "habit": "Brush and floss teeth 🪥", "icon": "🪥" },
+    { "id": 2, "habit": "Shower with soap and shampoo 🚿", "icon": "🚿" },
+    { "id": 3, "habit": "Wash hands for 20 seconds 🧼", "icon": "🧼" },
+    { "id": 4, "habit": "Eat a healthy breakfast 🥗", "icon": "🥗" },
+    { "id": 5, "habit": "Drink 8 glasses of water 💧", "icon": "💧" },
+    { "id": 6, "habit": "Exercise for 20 minutes 🏃", "icon": "🏃" },
+    { "id": 7, "habit": "Keep workspace clean and organised 🧹", "icon": "🧹" },
+    { "id": 8, "habit": "Get 8 hours of sleep 😴", "icon": "😴" },
+    { "id": 9, "habit": "Trim nails and keep them clean ✂️", "icon": "✂️" },
+    { "id": 10, "habit": "Wash clothes and put them away 👕", "icon": "👕" }
+  ]
+}

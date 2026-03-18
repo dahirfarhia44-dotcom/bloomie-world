@@ -2,7 +2,9 @@
 
 .home {
   min-height: 100vh;
-  padding: 30px 20px;
+  min-width: 100%;
+  padding: 0;
+  margin: 0;
   font-family: 'Nunito', sans-serif;
   background: #f7f8fc;
 }
@@ -42,8 +44,6 @@
   cursor: pointer;
   text-align: center;
   flex: 1;
-  min-width: 120px;
-  max-width: 180px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   font-weight: 700;
   font-family: 'Nunito', sans-serif;
@@ -62,12 +62,13 @@
 
 /* ── BASIC ── */
 .basicHome {
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: linear-gradient(135deg, #fff9c4, #ffe0f0);
-  border-radius: 30px;
+  border-radius: 0;
   padding: 36px;
-  box-shadow: 0 8px 32px rgba(255,105,180,0.15);
+  box-shadow: none;
 }
 
 .basicHome .welcome { color: #e91e8c; }
@@ -101,12 +102,13 @@
 
 /* ── INTERMEDIATE ── */
 .intermediateHome {
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
-  border-radius: 30px;
+  border-radius: 0;
   padding: 36px;
-  box-shadow: 0 8px 32px rgba(0,188,212,0.15);
+  box-shadow: none;
 }
 
 .intermediateHome .welcome { color: #00838f; }
@@ -163,12 +165,13 @@
 
 /* ── ADVANCED ── */
 .advancedHome {
-  max-width: 700px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: linear-gradient(135deg, #1a1a2e, #16213e);
-  border-radius: 30px;
+  border-radius: 0;
   padding: 36px;
-  box-shadow: 0 8px 32px rgba(124,106,247,0.3);
+  box-shadow: none;
 }
 
 .advancedHome .welcome { color: #a78bfa; }

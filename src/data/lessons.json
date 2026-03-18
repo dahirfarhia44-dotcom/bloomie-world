@@ -1,228 +1,720 @@
 {
   "basic": {
     "Math": [
-  {
-    "id": 1,
-    "title": "Counting Numbers 1-10",
-    "content": "Numbers help us count things around us! Let's count from 1 to 10. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. You can count your fingers, toys, or anything you see!",
-    "quiz": [
       {
-        "question": "What number comes after 5?",
-        "options": ["4", "6", "7", "8"],
-        "answer": "6"
+        "id": 1,
+        "title": "Counting Numbers 1-10",
+        "content": "Numbers help us count things around us! Let's count from 1 to 10. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. You can count your fingers, toys, or anything you see!",
+        "quiz": [
+          { "question": "What number comes after 5?", "options": ["4", "6", "7", "8"], "answer": "6" },
+          { "question": "How many fingers do you have on one hand?", "options": ["3", "4", "5", "6"], "answer": "5" },
+          { "question": "What number comes before 3?", "options": ["1", "2", "4", "5"], "answer": "2" }
+        ]
       },
       {
-        "question": "How many fingers do you have on one hand?",
-        "options": ["3", "4", "5", "6"],
-        "answer": "5"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Adding Small Numbers",
-    "content": "Adding means putting numbers together! If you have 2 apples and someone gives you 1 more apple, you now have 3 apples. 2 + 1 = 3. Let's practice adding!",
-    "quiz": [
-      {
-        "question": "What is 1 + 2?",
-        "options": ["2", "3", "4", "5"],
-        "answer": "3"
+        "id": 2,
+        "title": "Adding Small Numbers",
+        "content": "Adding means putting numbers together! If you have 2 apples and someone gives you 1 more apple, you now have 3 apples. 2 + 1 = 3. Let's practice adding!",
+        "quiz": [
+          { "question": "What is 1 + 2?", "options": ["2", "3", "4", "5"], "answer": "3" },
+          { "question": "What is 3 + 3?", "options": ["5", "6", "7", "8"], "answer": "6" },
+          { "question": "What is 4 + 2?", "options": ["5", "6", "7", "8"], "answer": "6" }
+        ]
       },
       {
-        "question": "What is 3 + 3?",
-        "options": ["5", "6", "7", "8"],
-        "answer": "6"
+        "id": 3,
+        "title": "Shapes Around Us",
+        "content": "Shapes are everywhere! A ball is a circle. A book is a rectangle. A sandwich cut in half is a triangle. Can you find shapes around your house?",
+        "quiz": [
+          { "question": "What shape is a ball?", "options": ["Square", "Triangle", "Circle", "Rectangle"], "answer": "Circle" },
+          { "question": "How many sides does a triangle have?", "options": ["2", "3", "4", "5"], "answer": "3" },
+          { "question": "How many sides does a rectangle have?", "options": ["2", "3", "4", "5"], "answer": "4" }
+        ]
       }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Shapes Around Us",
-    "content": "Shapes are everywhere! A ball is a circle. A book is a rectangle. A sandwich cut in half is a triangle. Can you find shapes around your house?",
-    "quiz": [
-      {
-        "question": "What shape is a ball?",
-        "options": ["Square", "Triangle", "Circle", "Rectangle"],
-        "answer": "Circle"
-      },
-      {
-        "question": "How many sides does a triangle have?",
-        "options": ["2", "3", "4", "5"],
-        "answer": "3"
-      }
-    ]
-  }
-],
+    ],
     "English": [
-  {
-    "id": 1,
-    "title": "The Alphabet",
-    "content": "The English alphabet has 26 letters. It starts with A and ends with Z. Letters help us read and write words.",
-    "quiz": [
       {
-        "question": "Which letter comes after A?",
-        "options": ["B", "C", "D", "Z"],
-        "answer": "B"
+        "id": 1,
+        "title": "The Alphabet",
+        "content": "The English alphabet has 26 letters. It starts with A and ends with Z. Letters help us read and write words.",
+        "quiz": [
+          { "question": "Which letter comes after A?", "options": ["B", "C", "D", "Z"], "answer": "B" },
+          { "question": "Which letter comes before C?", "options": ["A", "B", "D", "E"], "answer": "B" },
+          { "question": "How many letters are in the English alphabet?", "options": ["20", "24", "26", "28"], "answer": "26" }
+        ]
       },
       {
-        "question": "Which letter comes before C?",
-        "options": ["A", "B", "D", "E"],
-        "answer": "B"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Vowels",
-    "content": "Vowels are special letters in English. The vowels are A, E, I, O, and U. They help us make many words.",
-    "quiz": [
-      {
-        "question": "Which of these is a vowel?",
-        "options": ["B", "E", "T", "L"],
-        "answer": "E"
+        "id": 2,
+        "title": "Vowels",
+        "content": "Vowels are special letters in English. The vowels are A, E, I, O, and U. They help us make many words.",
+        "quiz": [
+          { "question": "Which of these is a vowel?", "options": ["B", "E", "T", "L"], "answer": "E" },
+          { "question": "How many vowels are there?", "options": ["3", "4", "5", "6"], "answer": "5" },
+          { "question": "Which of these is NOT a vowel?", "options": ["A", "I", "M", "U"], "answer": "M" }
+        ]
       },
       {
-        "question": "How many vowels are there?",
-        "options": ["3", "4", "5", "6"],
-        "answer": "5"
+        "id": 3,
+        "title": "Simple Words",
+        "content": "Words are made from letters. For example: cat, dog, sun, and hat. Reading small words helps us learn to read bigger ones.",
+        "quiz": [
+          { "question": "Which of these is a word?", "options": ["cat", "123", "@@", "###"], "answer": "cat" },
+          { "question": "What letter starts the word 'dog'?", "options": ["D", "O", "G", "C"], "answer": "D" },
+          { "question": "Which word rhymes with 'cat'?", "options": ["dog", "hat", "sun", "big"], "answer": "hat" }
+        ]
       }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Simple Words",
-    "content": "Words are made from letters. For example: cat, dog, sun, and hat. Reading small words helps us learn to read bigger ones.",
-    "quiz": [
-      {
-        "question": "Which of these is a word?",
-        "options": ["cat", "123", "@@", "###"],
-        "answer": "cat"
-      },
-      {
-        "question": "What letter starts the word 'dog'?",
-        "options": ["D", "O", "G", "C"],
-        "answer": "D"
-      }
-    ]
-  }
-],
+    ],
     "Science": [
-  {
-    "id": 1,
-    "title": "Living and Non-Living Things",
-    "content": "Living things grow, breathe, and need food and water. Animals and plants are living things. Rocks and chairs are non-living things.",
-    "quiz": [
       {
-        "question": "Which of these is a living thing?",
-        "options": ["Rock", "Tree", "Chair", "Table"],
-        "answer": "Tree"
+        "id": 1,
+        "title": "Living and Non-Living Things",
+        "content": "Living things grow, breathe, and need food and water. Animals and plants are living things. Rocks and chairs are non-living things.",
+        "quiz": [
+          { "question": "Which of these is a living thing?", "options": ["Rock", "Tree", "Chair", "Table"], "answer": "Tree" },
+          { "question": "Living things need what to grow?", "options": ["Food", "Plastic", "Metal", "Sand"], "answer": "Food" },
+          { "question": "Which of these is a non-living thing?", "options": ["Dog", "Fish", "Stone", "Bird"], "answer": "Stone" }
+        ]
       },
       {
-        "question": "Living things need what to grow?",
-        "options": ["Food", "Plastic", "Metal", "Sand"],
-        "answer": "Food"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Parts of the Body",
-    "content": "Our body has many parts. We see with our eyes, hear with our ears, and walk with our legs.",
-    "quiz": [
-      {
-        "question": "Which body part helps you see?",
-        "options": ["Eyes", "Ears", "Legs", "Hands"],
-        "answer": "Eyes"
+        "id": 2,
+        "title": "Parts of the Body",
+        "content": "Our body has many parts. We see with our eyes, hear with our ears, and walk with our legs.",
+        "quiz": [
+          { "question": "Which body part helps you see?", "options": ["Eyes", "Ears", "Legs", "Hands"], "answer": "Eyes" },
+          { "question": "Which body part helps you hear?", "options": ["Nose", "Eyes", "Ears", "Feet"], "answer": "Ears" },
+          { "question": "Which body part do you use to walk?", "options": ["Hands", "Ears", "Legs", "Eyes"], "answer": "Legs" }
+        ]
       },
       {
-        "question": "Which body part helps you hear?",
-        "options": ["Nose", "Eyes", "Ears", "Feet"],
-        "answer": "Ears"
+        "id": 3,
+        "title": "Day and Night",
+        "content": "During the day the sun shines and gives us light. At night the moon and stars appear in the sky.",
+        "quiz": [
+          { "question": "What shines during the day?", "options": ["Moon", "Sun", "Stars", "Clouds"], "answer": "Sun" },
+          { "question": "What appears at night?", "options": ["Sun", "Moon", "Cars", "Trees"], "answer": "Moon" },
+          { "question": "When is it dark outside?", "options": ["Morning", "Afternoon", "Night", "Noon"], "answer": "Night" }
+        ]
       }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Day and Night",
-    "content": "During the day the sun shines and gives us light. At night the moon and stars appear in the sky.",
-    "quiz": [
-      {
-        "question": "What shines during the day?",
-        "options": ["Moon", "Sun", "Stars", "Clouds"],
-        "answer": "Sun"
-      },
-      {
-        "question": "What appears at night?",
-        "options": ["Sun", "Moon", "Cars", "Trees"],
-        "answer": "Moon"
-      }
-    ]
-  }
-],
+    ],
     "LifeSkills": [
-  {
-    "id": 1,
-    "title": "Washing Hands",
-    "content": "Washing hands keeps us clean and healthy. We use soap and water to remove germs.",
-    "quiz": [
       {
-        "question": "What do we use to wash our hands?",
-        "options": ["Soap", "Dust", "Paper", "Sand"],
-        "answer": "Soap"
+        "id": 1,
+        "title": "Washing Hands",
+        "content": "Washing hands keeps us clean and healthy. We use soap and water to remove germs.",
+        "quiz": [
+          { "question": "What do we use to wash our hands?", "options": ["Soap", "Dust", "Paper", "Sand"], "answer": "Soap" },
+          { "question": "Why do we wash our hands?", "options": ["To get dirty", "To remove germs", "To play", "To sleep"], "answer": "To remove germs" },
+          { "question": "What do we use along with soap to wash hands?", "options": ["Juice", "Water", "Milk", "Oil"], "answer": "Water" }
+        ]
       },
       {
-        "question": "Why do we wash our hands?",
-        "options": ["To get dirty", "To remove germs", "To play", "To sleep"],
-        "answer": "To remove germs"
+        "id": 2,
+        "title": "Brushing Teeth",
+        "content": "We brush our teeth every morning and night to keep them clean and strong.",
+        "quiz": [
+          { "question": "What do we use to brush our teeth?", "options": ["Toothbrush", "Spoon", "Fork", "Pen"], "answer": "Toothbrush" },
+          { "question": "When should we brush our teeth?", "options": ["Morning and night", "Only at night", "Only morning", "Never"], "answer": "Morning and night" },
+          { "question": "Why do we brush our teeth?", "options": ["To make them dirty", "To keep them clean", "To eat faster", "To sleep better"], "answer": "To keep them clean" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Being Kind",
+        "content": "Being kind means helping others, sharing, and using polite words like please and thank you.",
+        "quiz": [
+          { "question": "Which word is polite?", "options": ["Please", "No", "Stop", "Go"], "answer": "Please" },
+          { "question": "Being kind means?", "options": ["Helping others", "Fighting", "Shouting", "Breaking things"], "answer": "Helping others" },
+          { "question": "Which is a kind action?", "options": ["Sharing your toys", "Taking things", "Shouting", "Running away"], "answer": "Sharing your toys" }
+        ]
       }
     ]
   },
-  {
-    "id": 2,
-    "title": "Brushing Teeth",
-    "content": "We brush our teeth every morning and night to keep them clean and strong.",
-    "quiz": [
-      {
-        "question": "What do we use to brush our teeth?",
-        "options": ["Toothbrush", "Spoon", "Fork", "Pen"],
-        "answer": "Toothbrush"
-      },
-      {
-        "question": "When should we brush our teeth?",
-        "options": ["Morning and night", "Only at night", "Only morning", "Never"],
-        "answer": "Morning and night"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "title": "Being Kind",
-    "content": "Being kind means helping others, sharing, and using polite words like please and thank you.",
-    "quiz": [
-      {
-        "question": "Which word is polite?",
-        "options": ["Please", "No", "Stop", "Go"],
-        "answer": "Please"
-      },
-      {
-        "question": "Being kind means?",
-        "options": ["Helping others", "Fighting", "Shouting", "Breaking things"],
-        "answer": "Helping others"
-      }
-    ]
-  }
-]
-  },
+
   "intermediate": {
-    "Math": [],
-    "English": [],
-    "Science": [],
-    "LifeSkills": []
+    "Math": [
+      {
+        "id": 1,
+        "title": "Multiplication Basics",
+        "content": "Multiplication is repeated addition. 3 × 4 means adding 3 four times: 3 + 3 + 3 + 3 = 12.",
+        "quiz": [
+          { "question": "3 × 4 = ?", "options": ["7", "12", "9", "10"], "answer": "12" },
+          { "question": "2 × 5 = ?", "options": ["7", "8", "10", "12"], "answer": "10" },
+          { "question": "Which means the same as 4 + 4 + 4?", "options": ["3 × 4", "4 × 3", "Both are correct", "Neither"], "answer": "Both are correct" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Division Basics",
+        "content": "Division means sharing equally. If you have 12 sweets and share them among 3 friends, each gets 4.",
+        "quiz": [
+          { "question": "12 ÷ 3 = ?", "options": ["3", "4", "5", "6"], "answer": "4" },
+          { "question": "10 ÷ 2 = ?", "options": ["3", "4", "5", "6"], "answer": "5" },
+          { "question": "8 ÷ 4 = ?", "options": ["1", "2", "3", "4"], "answer": "2" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Multiplying Bigger Numbers",
+        "content": "You can multiply larger numbers step by step. For example: 12 × 3 = (10 × 3) + (2 × 3) = 30 + 6 = 36.",
+        "quiz": [
+          { "question": "12 × 3 = ?", "options": ["24", "36", "30", "18"], "answer": "36" },
+          { "question": "11 × 4 = ?", "options": ["40", "42", "44", "46"], "answer": "44" },
+          { "question": "15 × 2 = ?", "options": ["25", "28", "30", "32"], "answer": "30" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Word Problems",
+        "content": "Math helps solve real-life problems. Read carefully and decide which operation to use.",
+        "quiz": [
+          { "question": "3 bags × 4 apples = ?", "options": ["7", "12", "9", "10"], "answer": "12" },
+          { "question": "15 children share 3 pizzas equally. How many children per pizza?", "options": ["3", "4", "5", "6"], "answer": "5" },
+          { "question": "A book costs 20 shillings. How much do 4 books cost?", "options": ["40", "60", "80", "100"], "answer": "80" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Intro to Fractions",
+        "content": "Fractions represent parts of a whole. 1/2 means one out of two equal parts.",
+        "quiz": [
+          { "question": "1/2 of 8 = ?", "options": ["2", "4", "6", "8"], "answer": "4" },
+          { "question": "1/4 of 12 = ?", "options": ["2", "3", "4", "6"], "answer": "3" },
+          { "question": "Which fraction is bigger: 1/2 or 1/4?", "options": ["1/2", "1/4", "They are equal", "Cannot tell"], "answer": "1/2" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Comparing Numbers",
+        "content": "Use >, <, and = to compare numbers. > means greater than, < means less than.",
+        "quiz": [
+          { "question": "Which is bigger?", "options": ["5", "9", "They are equal", "Cannot tell"], "answer": "9" },
+          { "question": "Which symbol fits: 7 ___ 3?", "options": [">", "<", "=", "None"], "answer": ">" },
+          { "question": "Which is correct?", "options": ["10 < 5", "5 > 10", "10 > 5", "5 = 10"], "answer": "10 > 5" }
+        ]
+      }
+    ],
+
+    "English": [
+      {
+        "id": 1,
+        "title": "Nouns",
+        "content": "Nouns name people, places, or things. Examples: teacher, school, book.",
+        "quiz": [
+          { "question": "Which is a noun?", "options": ["Run", "Dog", "Quickly", "Eat"], "answer": "Dog" },
+          { "question": "Which is a noun?", "options": ["Jump", "Happy", "School", "Slowly"], "answer": "School" },
+          { "question": "How many nouns are in: 'The cat sat on the mat'?", "options": ["1", "2", "3", "4"], "answer": "2" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Verbs",
+        "content": "Verbs are action words. They tell us what someone or something does. Examples: run, eat, sleep.",
+        "quiz": [
+          { "question": "Which is a verb?", "options": ["Run", "Chair", "Book", "Happy"], "answer": "Run" },
+          { "question": "Which is a verb?", "options": ["Table", "Big", "Jump", "Flower"], "answer": "Jump" },
+          { "question": "Which sentence has a verb?", "options": ["A big dog", "The dog runs fast", "The tall tree", "A red ball"], "answer": "The dog runs fast" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Adjectives",
+        "content": "Adjectives describe nouns. They tell us what something looks, feels, sounds, or tastes like.",
+        "quiz": [
+          { "question": "Which word describes a noun?", "options": ["Happy", "Run", "Eat", "Go"], "answer": "Happy" },
+          { "question": "Which is an adjective in: 'the big dog'?", "options": ["the", "big", "dog", "None"], "answer": "big" },
+          { "question": "Which is an adjective?", "options": ["Quickly", "Beautiful", "Jump", "Book"], "answer": "Beautiful" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Sentence Building",
+        "content": "A sentence needs a subject (who/what) and a verb (action). It starts with a capital letter and ends with a full stop.",
+        "quiz": [
+          { "question": "Which is a complete sentence?", "options": ["Runs fast", "The boy runs", "Big and tall", "Under the tree"], "answer": "The boy runs" },
+          { "question": "Which part is missing: '_____ is playing'?", "options": ["Verb", "Subject", "Adjective", "Nothing"], "answer": "Subject" },
+          { "question": "Which is correct?", "options": ["the girl sings.", "The girl sings.", "The girl Sings.", "the Girl sings."], "answer": "The girl sings." }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Pronouns",
+        "content": "Pronouns replace nouns to avoid repetition. Examples: he, she, it, they, we.",
+        "quiz": [
+          { "question": "Which is a pronoun?", "options": ["He", "Dog", "Chair", "Run"], "answer": "He" },
+          { "question": "Replace 'Maria' with a pronoun: 'Maria is kind.'", "options": ["He", "She", "They", "It"], "answer": "She" },
+          { "question": "Which is NOT a pronoun?", "options": ["We", "They", "Book", "It"], "answer": "Book" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Simple Tenses",
+        "content": "Tenses show when something happens. Past = already happened. Present = happening now. Future = will happen.",
+        "quiz": [
+          { "question": "Past tense of 'eat'?", "options": ["Ate", "Eat", "Eating", "Eats"], "answer": "Ate" },
+          { "question": "Which is in the present tense?", "options": ["She ran", "She runs", "She will run", "She had run"], "answer": "She runs" },
+          { "question": "Past tense of 'play'?", "options": ["Plays", "Playing", "Played", "Will play"], "answer": "Played" }
+        ]
+      }
+    ],
+
+    "Science": [
+      {
+        "id": 1,
+        "title": "States of Matter",
+        "content": "Matter exists as solid, liquid, or gas. Solids have fixed shape, liquids flow, gases fill their container.",
+        "quiz": [
+          { "question": "Water is a?", "options": ["Solid", "Liquid", "Gas", "None"], "answer": "Liquid" },
+          { "question": "Ice is a?", "options": ["Solid", "Liquid", "Gas", "None"], "answer": "Solid" },
+          { "question": "Steam is a?", "options": ["Solid", "Liquid", "Gas", "None"], "answer": "Gas" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Changes in Matter",
+        "content": "Matter can change from one state to another. Ice melts into water. Water evaporates into steam.",
+        "quiz": [
+          { "question": "Ice melting is a?", "options": ["Change in state", "New material", "Non-change", "None"], "answer": "Change in state" },
+          { "question": "Water turning to steam is called?", "options": ["Melting", "Evaporation", "Freezing", "Condensation"], "answer": "Evaporation" },
+          { "question": "What happens when water is cooled below 0°C?", "options": ["It evaporates", "It freezes", "It boils", "Nothing"], "answer": "It freezes" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Energy",
+        "content": "Energy is the ability to do work. It comes in many forms: heat, light, sound, and movement.",
+        "quiz": [
+          { "question": "The sun gives us?", "options": ["Energy", "Water", "Soil", "Food"], "answer": "Energy" },
+          { "question": "Which is a form of energy?", "options": ["Heat", "Rock", "Water", "Paper"], "answer": "Heat" },
+          { "question": "What do we need energy for?", "options": ["To move and do work", "To sleep only", "Nothing", "To stay still"], "answer": "To move and do work" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Plants",
+        "content": "Plants need sunlight, water, and air to make their own food through a process called photosynthesis.",
+        "quiz": [
+          { "question": "Plants need?", "options": ["Sunlight", "Plastic", "Metal", "Cloth"], "answer": "Sunlight" },
+          { "question": "The process plants use to make food is called?", "options": ["Digestion", "Photosynthesis", "Respiration", "Absorption"], "answer": "Photosynthesis" },
+          { "question": "Which part of a plant absorbs water from the soil?", "options": ["Leaves", "Flowers", "Roots", "Stem"], "answer": "Roots" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Animals",
+        "content": "Animals need food, water, and shelter to survive. They can be grouped by what they eat: herbivores, carnivores, or omnivores.",
+        "quiz": [
+          { "question": "Animals need?", "options": ["Food", "Metal", "Plastic", "Glass"], "answer": "Food" },
+          { "question": "An animal that eats only plants is called a?", "options": ["Carnivore", "Herbivore", "Omnivore", "Predator"], "answer": "Herbivore" },
+          { "question": "Which animal is a carnivore?", "options": ["Cow", "Rabbit", "Lion", "Goat"], "answer": "Lion" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Human Body Systems",
+        "content": "Our body has systems that work together. The heart pumps blood. The lungs help us breathe. The brain controls everything.",
+        "quiz": [
+          { "question": "The heart pumps?", "options": ["Blood", "Air", "Water", "Food"], "answer": "Blood" },
+          { "question": "Which organ helps us breathe?", "options": ["Heart", "Lungs", "Liver", "Stomach"], "answer": "Lungs" },
+          { "question": "Which organ controls the whole body?", "options": ["Heart", "Lungs", "Brain", "Kidney"], "answer": "Brain" }
+        ]
+      }
+    ],
+
+    "LifeSkills": [
+      {
+        "id": 1,
+        "title": "Healthy Eating",
+        "content": "Eating fruits, vegetables, and balanced meals gives our body the energy and nutrients it needs to grow and stay healthy.",
+        "quiz": [
+          { "question": "Which is a healthy food?", "options": ["Apple", "Candy", "Soda", "Chips"], "answer": "Apple" },
+          { "question": "Why should we eat vegetables?", "options": ["For nutrients", "They taste bad", "They are expensive", "No reason"], "answer": "For nutrients" },
+          { "question": "Which meal is most balanced?", "options": ["Only chips", "Rice, vegetables and meat", "Only sweets", "Biscuits only"], "answer": "Rice, vegetables and meat" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Exercise",
+        "content": "Regular exercise keeps our body strong, our heart healthy, and our mind happy.",
+        "quiz": [
+          { "question": "Exercise is?", "options": ["Running", "Sleeping all day", "Watching TV", "Sitting still"], "answer": "Running" },
+          { "question": "What does exercise strengthen?", "options": ["Our body", "Our pencil", "Our chair", "Our bag"], "answer": "Our body" },
+          { "question": "How often should you exercise?", "options": ["Never", "Once a year", "Regularly", "Only on holidays"], "answer": "Regularly" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Hygiene",
+        "content": "Good hygiene habits like bathing, brushing teeth, and keeping clothes clean protect us from illness.",
+        "quiz": [
+          { "question": "Should you brush your teeth?", "options": ["Yes", "No", "Sometimes", "Never"], "answer": "Yes" },
+          { "question": "Why is hygiene important?", "options": ["To stay healthy", "To look fashionable", "No reason", "To waste time"], "answer": "To stay healthy" },
+          { "question": "Which is a hygiene habit?", "options": ["Bathing daily", "Never washing hands", "Wearing dirty clothes", "Skipping meals"], "answer": "Bathing daily" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Safety",
+        "content": "Staying safe means following rules at home, school, and on the road to prevent accidents and injuries.",
+        "quiz": [
+          { "question": "Should you look both ways before crossing?", "options": ["Yes", "No", "Sometimes", "Never"], "answer": "Yes" },
+          { "question": "What should you do if a stranger offers you sweets?", "options": ["Take them", "Say no and tell an adult", "Follow them", "Ignore it"], "answer": "Say no and tell an adult" },
+          { "question": "Where is it safe to play?", "options": ["On a busy road", "In a designated play area", "Near a fire", "On train tracks"], "answer": "In a designated play area" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Respect",
+        "content": "Respect means treating others the way you would like to be treated — with kindness, patience, and fairness.",
+        "quiz": [
+          { "question": "Respect means?", "options": ["Kindness", "Being rude", "Shouting", "Ignoring people"], "answer": "Kindness" },
+          { "question": "How should you treat others?", "options": ["Badly", "The way you want to be treated", "With anger", "By ignoring them"], "answer": "The way you want to be treated" },
+          { "question": "Which shows respect?", "options": ["Interrupting others", "Listening when someone speaks", "Taking things without asking", "Laughing at mistakes"], "answer": "Listening when someone speaks" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Responsibility",
+        "content": "Being responsible means doing your duties, owning your mistakes, and following through on commitments.",
+        "quiz": [
+          { "question": "Responsible means?", "options": ["Doing your work", "Ignoring tasks", "Blaming others", "Giving up"], "answer": "Doing your work" },
+          { "question": "What should you do if you make a mistake?", "options": ["Blame someone else", "Admit it and correct it", "Run away", "Pretend it didn't happen"], "answer": "Admit it and correct it" },
+          { "question": "Which is a responsible action?", "options": ["Finishing your homework", "Forgetting your chores", "Breaking rules", "Lying to a teacher"], "answer": "Finishing your homework" }
+        ]
+      }
+    ]
   },
+
   "advanced": {
-    "Math": [],
-    "English": [],
-    "Science": [],
-    "LifeSkills": []
+    "Math": [
+      {
+        "id": 1,
+        "title": "Fractions",
+        "content": "Fractions represent parts of a whole. The top number is the numerator, the bottom is the denominator.",
+        "quiz": [
+          { "question": "1/2 of 10 = ?", "options": ["2", "5", "10", "8"], "answer": "5" },
+          { "question": "3/4 of 8 = ?", "options": ["4", "5", "6", "7"], "answer": "6" },
+          { "question": "Which fraction is equivalent to 2/4?", "options": ["1/3", "1/2", "2/3", "3/4"], "answer": "1/2" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Decimals",
+        "content": "Decimals are another way to show parts of numbers. 0.5 = 1/2, and 0.25 = 1/4.",
+        "quiz": [
+          { "question": "0.5 = ?", "options": ["1/2", "1/5", "5", "1/4"], "answer": "1/2" },
+          { "question": "0.25 = ?", "options": ["1/2", "1/4", "1/5", "2/5"], "answer": "1/4" },
+          { "question": "Which is larger: 0.75 or 0.5?", "options": ["0.5", "0.75", "They are equal", "Cannot tell"], "answer": "0.75" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Percentages",
+        "content": "Percent means out of 100. 50% = 50 out of 100 = 1/2. Percentages are used in everyday life.",
+        "quiz": [
+          { "question": "50% of 20 = ?", "options": ["5", "10", "15", "20"], "answer": "10" },
+          { "question": "25% of 40 = ?", "options": ["5", "8", "10", "12"], "answer": "10" },
+          { "question": "100% of any number equals?", "options": ["Half of it", "Double it", "The number itself", "Zero"], "answer": "The number itself" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Ratios",
+        "content": "Ratios compare two quantities. A ratio of 2:1 means for every 2 of one thing, there is 1 of another.",
+        "quiz": [
+          { "question": "2:1 means?", "options": ["2 to 1", "1 to 2", "2 plus 1", "2 minus 1"], "answer": "2 to 1" },
+          { "question": "If the ratio of boys to girls is 3:1 and there are 9 boys, how many girls?", "options": ["2", "3", "4", "6"], "answer": "3" },
+          { "question": "Simplify the ratio 4:8?", "options": ["2:4", "1:2", "4:2", "8:4"], "answer": "1:2" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Algebra Basics",
+        "content": "In algebra, letters represent unknown numbers. We solve equations to find the value of the unknown.",
+        "quiz": [
+          { "question": "x + 3 = 5, x = ?", "options": ["2", "3", "5", "8"], "answer": "2" },
+          { "question": "y - 4 = 6, y = ?", "options": ["2", "8", "10", "12"], "answer": "10" },
+          { "question": "What is the unknown in: n + 7 = 15?", "options": ["6", "7", "8", "9"], "answer": "8" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Simple Equations",
+        "content": "Solve equations by doing the same operation on both sides to isolate the unknown variable.",
+        "quiz": [
+          { "question": "2x = 10, x = ?", "options": ["2", "5", "10", "20"], "answer": "5" },
+          { "question": "3x = 21, x = ?", "options": ["6", "7", "8", "9"], "answer": "7" },
+          { "question": "x ÷ 4 = 3, x = ?", "options": ["7", "9", "12", "15"], "answer": "12" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Word Problems",
+        "content": "Apply math to real-life situations by identifying the key information and the correct operation.",
+        "quiz": [
+          { "question": "5 apples each for 4 people = ?", "options": ["20", "15", "10", "9"], "answer": "20" },
+          { "question": "A shirt costs 500 shillings. After a 20% discount, how much do you pay?", "options": ["300", "350", "400", "450"], "answer": "400" },
+          { "question": "A train travels 60 km per hour. How far in 3 hours?", "options": ["120", "150", "180", "200"], "answer": "180" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Mixed Problems",
+        "content": "Combine fractions, percentages, and algebra to solve complex problems step by step.",
+        "quiz": [
+          { "question": "1/2 of 20 + 5 = ?", "options": ["15", "10", "20", "25"], "answer": "15" },
+          { "question": "25% of 80 + 10 = ?", "options": ["25", "30", "35", "40"], "answer": "30" },
+          { "question": "If x = 4, what is 3x + 2?", "options": ["12", "13", "14", "15"], "answer": "14" }
+        ]
+      }
+    ],
+
+    "English": [
+      {
+        "id": 1,
+        "title": "Sentence Structure",
+        "content": "A sentence must have a subject (who/what) and a predicate (verb + more). It expresses a complete thought.",
+        "quiz": [
+          { "question": "Which is a complete sentence?", "options": ["Runs fast", "The boy runs", "Big and tall", "Under the tree"], "answer": "The boy runs" },
+          { "question": "What is the subject in: 'The cat climbed the tree'?", "options": ["The cat", "Climbed", "The tree", "Cat tree"], "answer": "The cat" },
+          { "question": "Which is NOT a complete sentence?", "options": ["She sings well", "The tall mountain", "Birds fly south", "He arrived early"], "answer": "The tall mountain" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Tenses",
+        "content": "Tenses indicate when an action happens: past, present, or future. Each has its own verb form.",
+        "quiz": [
+          { "question": "Past tense of 'go'?", "options": ["Went", "Go", "Going", "Gone"], "answer": "Went" },
+          { "question": "Which sentence is in the future tense?", "options": ["She ran", "She runs", "She will run", "She is running"], "answer": "She will run" },
+          { "question": "Change to past tense: 'He writes a letter.'", "options": ["He writes", "He wrote", "He will write", "He is writing"], "answer": "He wrote" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Adverbs",
+        "content": "Adverbs describe verbs, adjectives, or other adverbs. Many end in '-ly'. They tell how, when, or where.",
+        "quiz": [
+          { "question": "Which is an adverb?", "options": ["Quickly", "Quick", "Run", "Chair"], "answer": "Quickly" },
+          { "question": "Find the adverb: 'She sang beautifully.'", "options": ["She", "Sang", "Beautifully", "None"], "answer": "Beautifully" },
+          { "question": "Which adverb tells us WHERE?", "options": ["Quickly", "Yesterday", "Here", "Gently"], "answer": "Here" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Complex Sentences",
+        "content": "Complex sentences combine two or more ideas using conjunctions like 'and', 'but', 'because', and 'although'.",
+        "quiz": [
+          { "question": "Which is more complex?", "options": ["I ran and I fell", "I ran", "She sat", "He ate"], "answer": "I ran and I fell" },
+          { "question": "Which conjunction joins two opposite ideas?", "options": ["And", "But", "So", "For"], "answer": "But" },
+          { "question": "Complete: 'She was tired ______ she kept working.'", "options": ["so", "but", "and", "or"], "answer": "but" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Punctuation",
+        "content": "Punctuation marks help us understand writing. Full stops, commas, question marks, and exclamation marks all have specific uses.",
+        "quiz": [
+          { "question": "Which mark ends a statement?", "options": [".", ",", "?", "!"], "answer": "." },
+          { "question": "Which mark ends a question?", "options": [".", ",", "?", "!"], "answer": "?" },
+          { "question": "Where does a comma go in a list?", "options": ["At the end", "Between items", "At the start", "Nowhere"], "answer": "Between items" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Reading Comprehension",
+        "content": "Reading comprehension means understanding what you read — identifying the main idea, details, and conclusions.",
+        "quiz": [
+          { "question": "Reading comprehension helps you?", "options": ["Understand texts", "Write faster", "Ignore details", "Skip questions"], "answer": "Understand texts" },
+          { "question": "The 'main idea' of a passage is?", "options": ["A small detail", "The most important point", "The first sentence only", "The title only"], "answer": "The most important point" },
+          { "question": "What should you do if you don't understand a sentence?", "options": ["Skip it", "Re-read it carefully", "Guess randomly", "Stop reading"], "answer": "Re-read it carefully" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Synonyms & Antonyms",
+        "content": "Synonyms are words with similar meanings (big/large). Antonyms are words with opposite meanings (big/small).",
+        "quiz": [
+          { "question": "Opposite of big?", "options": ["Small", "Large", "Tall", "Wide"], "answer": "Small" },
+          { "question": "Synonym of 'happy'?", "options": ["Sad", "Angry", "Joyful", "Tired"], "answer": "Joyful" },
+          { "question": "Antonym of 'fast'?", "options": ["Quick", "Slow", "Speed", "Race"], "answer": "Slow" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Writing Skills",
+        "content": "Good writing is clear, organised, and uses correct grammar. A paragraph has a topic sentence, supporting details, and a conclusion.",
+        "quiz": [
+          { "question": "Good writing should be?", "options": ["Clear", "Confusing", "Very long", "Without punctuation"], "answer": "Clear" },
+          { "question": "The topic sentence of a paragraph?", "options": ["Ends the paragraph", "Introduces the main idea", "Lists all details", "Has no purpose"], "answer": "Introduces the main idea" },
+          { "question": "Which makes writing easier to read?", "options": ["No full stops", "Short random sentences", "Organized paragraphs", "No capital letters"], "answer": "Organized paragraphs" }
+        ]
+      }
+    ],
+
+    "Science": [
+      {
+        "id": 1,
+        "title": "Solar System",
+        "content": "Our solar system has 8 planets that orbit the sun. Earth is the third planet and the only one known to support life.",
+        "quiz": [
+          { "question": "We live on?", "options": ["Earth", "Mars", "Jupiter", "Venus"], "answer": "Earth" },
+          { "question": "How many planets are in our solar system?", "options": ["6", "7", "8", "9"], "answer": "8" },
+          { "question": "Which planet is closest to the Sun?", "options": ["Earth", "Venus", "Mercury", "Mars"], "answer": "Mercury" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Forces",
+        "content": "A force is a push or pull that can make objects move, stop, or change direction. Gravity is a natural force.",
+        "quiz": [
+          { "question": "A push is a?", "options": ["Force", "Food", "Gas", "Chemical"], "answer": "Force" },
+          { "question": "What force pulls objects toward Earth?", "options": ["Magnetism", "Gravity", "Friction", "Tension"], "answer": "Gravity" },
+          { "question": "Which force slows things down?", "options": ["Gravity", "Magnetism", "Friction", "Push"], "answer": "Friction" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Energy Types",
+        "content": "Energy can be heat, light, sound, electrical, or kinetic (movement). Energy can be transformed from one type to another.",
+        "quiz": [
+          { "question": "The sun gives us?", "options": ["Heat and light", "Only water", "Only food", "Metal"], "answer": "Heat and light" },
+          { "question": "A moving car has what type of energy?", "options": ["Chemical", "Sound", "Kinetic", "Nuclear"], "answer": "Kinetic" },
+          { "question": "A battery stores what type of energy?", "options": ["Kinetic", "Chemical", "Sound", "Light"], "answer": "Chemical" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Electricity",
+        "content": "Electricity is a form of energy that powers devices. It flows through conductors like copper wires.",
+        "quiz": [
+          { "question": "Electricity powers?", "options": ["TV", "Stone", "Soil", "Wind alone"], "answer": "TV" },
+          { "question": "Which material conducts electricity?", "options": ["Wood", "Rubber", "Copper", "Plastic"], "answer": "Copper" },
+          { "question": "What is used to control the flow of electricity?", "options": ["A switch", "A stone", "A leaf", "Sand"], "answer": "A switch" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Human Body",
+        "content": "The human body is made up of systems that work together. The brain, heart, lungs, and digestive system all have key roles.",
+        "quiz": [
+          { "question": "The brain controls?", "options": ["The whole body", "Only food", "Only movement", "Only breathing"], "answer": "The whole body" },
+          { "question": "What does the stomach do?", "options": ["Pumps blood", "Digests food", "Filters air", "Controls thinking"], "answer": "Digests food" },
+          { "question": "How many chambers does the human heart have?", "options": ["2", "3", "4", "5"], "answer": "4" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Environment",
+        "content": "Our environment provides us with clean air, water, and food. We must protect it by reducing pollution and recycling.",
+        "quiz": [
+          { "question": "How can we protect the environment?", "options": ["Recycle", "Pollute", "Cut all trees", "Waste water"], "answer": "Recycle" },
+          { "question": "What is deforestation?", "options": ["Planting trees", "Cutting down forests", "Watering plants", "Cleaning rivers"], "answer": "Cutting down forests" },
+          { "question": "Which action helps reduce pollution?", "options": ["Burning waste", "Using public transport", "Buying more cars", "Throwing litter"], "answer": "Using public transport" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Weather & Climate",
+        "content": "Weather is the daily state of the atmosphere (rain, sun, wind). Climate is the average weather of a place over a long time.",
+        "quiz": [
+          { "question": "Rain is?", "options": ["Weather", "Food", "Soil", "Rock"], "answer": "Weather" },
+          { "question": "Climate refers to?", "options": ["Today's weather", "Average weather over years", "One storm", "Daily temperature only"], "answer": "Average weather over years" },
+          { "question": "Which is a result of climate change?", "options": ["More ice caps", "Rising sea levels", "Cooler temperatures", "Less rainfall everywhere"], "answer": "Rising sea levels" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Scientific Thinking",
+        "content": "Science uses observation, hypothesis, experimentation, and conclusion to answer questions about the world.",
+        "quiz": [
+          { "question": "Science uses?", "options": ["Experiments", "Guessing only", "Magic", "Luck"], "answer": "Experiments" },
+          { "question": "What is a hypothesis?", "options": ["A proven fact", "An educated guess to test", "A conclusion", "A law"], "answer": "An educated guess to test" },
+          { "question": "What is the last step of the scientific method?", "options": ["Observation", "Hypothesis", "Experiment", "Conclusion"], "answer": "Conclusion" }
+        ]
+      }
+    ],
+
+    "LifeSkills": [
+      {
+        "id": 1,
+        "title": "Time Management",
+        "content": "Managing your time well means planning tasks, setting priorities, and avoiding procrastination.",
+        "quiz": [
+          { "question": "How do you manage time?", "options": ["Plan ahead", "Ignore tasks", "Do things randomly", "Wait until the last minute"], "answer": "Plan ahead" },
+          { "question": "What is procrastination?", "options": ["Starting early", "Delaying tasks unnecessarily", "Finishing on time", "Helping others"], "answer": "Delaying tasks unnecessarily" },
+          { "question": "What helps you manage your time?", "options": ["A schedule", "Watching TV all day", "Forgetting deadlines", "Avoiding work"], "answer": "A schedule" }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Goal Setting",
+        "content": "Clear goals give you direction and motivation. Good goals are specific, measurable, and achievable.",
+        "quiz": [
+          { "question": "Goals help you?", "options": ["Stay focused", "Get confused", "Waste time", "Ignore work"], "answer": "Stay focused" },
+          { "question": "A good goal should be?", "options": ["Vague and unclear", "Specific and achievable", "Impossible", "Set by others only"], "answer": "Specific and achievable" },
+          { "question": "What should you do if you don't reach a goal?", "options": ["Give up forever", "Reflect and try again", "Blame others", "Set no more goals"], "answer": "Reflect and try again" }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Decision Making",
+        "content": "Good decisions require thinking through options, considering consequences, and choosing wisely.",
+        "quiz": [
+          { "question": "Good decisions require?", "options": ["Thinking carefully", "Rushing always", "Copying others", "Ignoring consequences"], "answer": "Thinking carefully" },
+          { "question": "Before making a decision you should?", "options": ["Act immediately", "Consider the consequences", "Ask no one", "Ignore alternatives"], "answer": "Consider the consequences" },
+          { "question": "What helps you make better decisions?", "options": ["More information", "Less thinking", "Ignoring advice", "Acting on impulse"], "answer": "More information" }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Communication",
+        "content": "Effective communication means speaking clearly, listening actively, and expressing ideas respectfully.",
+        "quiz": [
+          { "question": "Communication is?", "options": ["Sharing ideas clearly", "Ignoring others", "Shouting always", "Talking without listening"], "answer": "Sharing ideas clearly" },
+          { "question": "What is active listening?", "options": ["Talking over others", "Paying full attention to the speaker", "Looking at your phone", "Daydreaming"], "answer": "Paying full attention to the speaker" },
+          { "question": "Good communication helps?", "options": ["Build relationships", "Cause misunderstandings", "Hurt feelings", "Create conflict"], "answer": "Build relationships" }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Leadership",
+        "content": "A good leader guides, motivates, and supports others while taking responsibility for the team's actions.",
+        "quiz": [
+          { "question": "A leader should?", "options": ["Guide others", "Always follow", "Never listen", "Ignore the team"], "answer": "Guide others" },
+          { "question": "Which quality makes a good leader?", "options": ["Selfishness", "Dishonesty", "Empathy", "Laziness"], "answer": "Empathy" },
+          { "question": "A leader takes responsibility for?", "options": ["Only successes", "Only failures", "Nothing", "The team's actions"], "answer": "The team's actions" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Problem Solving",
+        "content": "Solving problems involves identifying the issue, brainstorming solutions, choosing the best one, and evaluating results.",
+        "quiz": [
+          { "question": "Solving problems requires?", "options": ["Clear thinking", "Quitting", "Ignoring issues", "Panicking"], "answer": "Clear thinking" },
+          { "question": "What is the first step in problem solving?", "options": ["Find a solution", "Identify the problem", "Evaluate results", "Do nothing"], "answer": "Identify the problem" },
+          { "question": "After applying a solution, you should?", "options": ["Forget about it", "Evaluate if it worked", "Start a new problem", "Blame others"], "answer": "Evaluate if it worked" }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Teamwork",
+        "content": "Working well in a team means sharing tasks, communicating clearly, respecting others, and working toward a common goal.",
+        "quiz": [
+          { "question": "Teamwork means?", "options": ["Working together", "Working alone always", "Competing against others", "Ignoring teammates"], "answer": "Working together" },
+          { "question": "What is important in a team?", "options": ["Trust and communication", "Secrecy", "Competing within the team", "Doing everything yourself"], "answer": "Trust and communication" },
+          { "question": "When a teammate makes a mistake, you should?", "options": ["Laugh at them", "Exclude them", "Support and help them", "Quit the team"], "answer": "Support and help them" }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Self Discipline",
+        "content": "Self-discipline means controlling your impulses, staying focused, and doing what needs to be done even when it's difficult.",
+        "quiz": [
+          { "question": "Discipline means?", "options": ["Controlling your actions", "Doing whatever you want", "Ignoring rules", "Being selfish"], "answer": "Controlling your actions" },
+          { "question": "Self-discipline helps you?", "options": ["Achieve your goals", "Waste time", "Avoid responsibilities", "Give up easily"], "answer": "Achieve your goals" },
+          { "question": "Which shows self-discipline?", "options": ["Studying even when tired", "Playing instead of working", "Ignoring deadlines", "Always taking shortcuts"], "answer": "Studying even when tired" }
+        ]
+      }
+    ]
   }
 }

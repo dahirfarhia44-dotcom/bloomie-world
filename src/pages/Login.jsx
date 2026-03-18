@@ -8,16 +8,30 @@ function Login() {
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    const students = JSON.parse(localStorage.getItem('students')) || [];
-    const found = students.find(s => s.email === credentials.email && s.password === credentials.password);
-    if (found) {
-      localStorage.setItem('currentStudent', JSON.stringify(found));
-      window.location.replace('/home');
+  e.preventDefault();
+
+  const students = JSON.parse(localStorage.getItem('students')) || [];
+  const found = students.find(
+    s => s.email === credentials.email && s.password === credentials.password
+  );
+
+  if (found) {
+
+    const existingCurrent = JSON.parse(localStorage.getItem('currentStudent'));
+
+    if (existingCurrent && existingCurrent.email === found.email) {
+
+      localStorage.setItem('currentStudent', JSON.stringify(existingCurrent));
     } else {
-      setError('Invalid email or password. Please sign up first!');
+
+      localStorage.setItem('currentStudent', JSON.stringify(found));
     }
-  };
+
+    window.location.replace('/home');
+  } else {
+    setError('Invalid email or password. Please sign up first!');
+  }
+};
 
   return (
     <div className={styles.auth}>
