@@ -4,10 +4,11 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Splashscreen from "./pages/Splashscreen";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
-import SignUp from "./pages/SignUp"; 
-import Login from "./pages/Login";  
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import Learn from "./pages/Learn";
@@ -32,41 +33,41 @@ function AdminRoute({ children }) {
 
 function App() {
   return (
-   <Routes>
-    <Route path="/" element={<Splashscreen />} />
-    <Route path="/signup" element={<SignUp />} />
-    <Route path="/login" element={<Login />} />
-    <Route path="/admin/login" element={<AdminLogin />} />
+    <Routes>
+      <Route path="/" element={<Splashscreen />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/admin/login" element={<AdminLogin />} />
 
-    {/* Protected admin route */}
-    <Route path="/admin/dashboard" element={
-      <AdminRoute>
-        <AdminDashboard />
-      </AdminRoute>
-    } />
+      {/* Protected admin route */}
+      <Route path="/admin/dashboard" element={
+        <AdminRoute>
+          <AdminDashboard />
+        </AdminRoute>
+      } />
 
-    {/* Protected student routes */}
-    <Route path="/home" element={
-      <ProtectedRoute>
-        <Hero /><Navbar /><Home />
-      </ProtectedRoute>
-    } />
-    <Route path="/learn" element={
-      <ProtectedRoute>
-        <Hero /><Navbar /><Learn />
-      </ProtectedRoute>
-    } />
-    <Route path="/hygiene" element={
-      <ProtectedRoute>
-        <Hero /><Navbar /><Hygiene />
-      </ProtectedRoute>
-    } />
-    <Route path="/games" element={
-      <ProtectedRoute>
-        <Hero /><Navbar /><Games />
-      </ProtectedRoute>
-    } />
-   </Routes>
+      {/* Protected student routes */}
+      <Route path="/home" element={
+        <ProtectedRoute>
+          <Hero /><Navbar /><Home /><Footer />
+        </ProtectedRoute>
+      } />
+      <Route path="/learn" element={
+        <ProtectedRoute>
+          <Hero /><Navbar /><Learn /><Footer />
+        </ProtectedRoute>
+      } />
+      <Route path="/hygiene" element={
+        <ProtectedRoute>
+          <Hero /><Navbar /><Hygiene /><Footer />
+        </ProtectedRoute>
+      } />
+      <Route path="/games" element={
+        <ProtectedRoute>
+          <Hero /><Navbar /><Games /><Footer />
+        </ProtectedRoute>
+      } />
+    </Routes>
   );
 }
 

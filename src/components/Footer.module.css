@@ -1,0 +1,61 @@
+.footer {
+  width: 100%;
+  padding: 16px 32px;
+  margin-top: auto;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.logo {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+
+.copy {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+/* ── Level themes ── */
+.basicFooter {
+  background: rgba(255, 179, 217, 0.2);
+  border-top: 1px solid #ffb3d9;
+  color: #e91e8c;
+}
+
+.intermediateFooter {
+  background: rgba(178, 235, 242, 0.2);
+  border-top: 1px solid #b2ebf2;
+  color: #00838f;
+}
+
+.advancedFooter {
+  background: rgba(28, 32, 48, 0.8);
+  border-top: 1px solid #272c3d;
+  color: #a78bfa;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tagline { display: none; }
+}
