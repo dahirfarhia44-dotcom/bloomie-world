@@ -36,24 +36,20 @@ body {
   animation: float 2s ease-in-out infinite;
 }
 
-.fan, .fano {
+.fan {
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(240, 12, 248);
     text-align: center;
     line-height: 3;
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 47%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     opacity: 0.3;
 }
 
-.fano {
-    top: 10%;
-    left: 47%;
-}
 
 /* Floating emojis - Random Movement */
 .emojiItem {
